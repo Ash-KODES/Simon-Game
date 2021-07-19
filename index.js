@@ -12,6 +12,12 @@ $(document).on("keypress",function(){
 	started=true;
     }
 });
+$(document).on("click",function(){
+	if(!started){
+	nextSequence();
+	started=true;
+    }
+});
 
 $(".btn").on("click",function(event){
            var userChosenColour = $(this).attr("id");
